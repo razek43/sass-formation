@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "font1";
+    src: url(../fonts/NotoSerifDisplay-VariableFont_wdth\,wght.ttf);
+}
+$color1: rgb(100, 21, 35);
+$color2: orange;
+$color3: rgb(22, 22, 22);
+@mixin {
+
+}
+
+nav {
+    background: pink;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            list-style: none;
+
+        }
+
+    }
+}
+h1 {
+    font-family: "font1", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    &:after {
+        content: "*";
+        position:absolute;
+        transform:translateY(-6px);
+        color: $color1;
+    }
+    &:hover:after {
+        font-size: 2em;
+    }
+}
