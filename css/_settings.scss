@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: "font1";
+    src: url(../assets/fonts/NotoSerifDisplay-VariableFont_wdth\,wght.ttf);
+} 
+
+$font1 : font1, sans-serif;    
+$color1 : pink;
+$color2 : orange;
+$color3 : rgb(22,22, 22);
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+background: $color2;
+font-family: $font1;
+}
